@@ -2,8 +2,14 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import fs from 'fs/promises';
 
+
 const app = express();
+// const nock = require('nock');
 app.use(bodyParser.json());
+
+// nock('http://127.0.0.1/archivo')
+//   .get('/data')
+//   .reply(200, { key: 'value', message: 'Hello from the simulated API!'  });
 
 let data = [];
 
